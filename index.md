@@ -20,8 +20,8 @@ Para fornecer a funcionalidade do nosso serviço, coletamos os seguintes tipos d
 
 * **Dados de Saúde (Com sua Permissão Explícita via Health Connect):**
     * O aplicativo solicitará sua permissão para **ler**, de forma segura, os seguintes tipos de dados do Health Connect no seu dispositivo:
-        1.  **Energia Ativa Queimada (Calorias Ativas):** Usado para comparar com sua meta diária e acionar a recompensa.
-        2.  **Reconhecimento de Atividade Física:** Uma permissão geral do sistema Android necessária para que os aplicativos possam acessar dados de condicionamento físico.
+        1.  **Total calories burned (Total de calorias queimadas):** Usado para comparar com sua meta diária e acionar a recompensa.
+        3.  **Reconhecimento de Atividade Física:** Uma permissão geral do sistema Android necessária para que os aplicativos possam acessar dados de condicionamento físico.
 
 * **Dados de Ativação do Dispositivo:**
     * **Auth Token do Blynk e ID do Totem:** Associados à sua conta para que nosso sistema possa se comunicar com o seu totem físico.
