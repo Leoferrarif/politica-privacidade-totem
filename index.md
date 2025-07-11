@@ -16,14 +16,16 @@ Para fornecer a funcionalidade do nosso serviço, coletamos os seguintes tipos d
 
 * **Dados Fornecidos pelo Usuário no Cadastro:**
     * **Nome e E-mail:** Utilizados para a criação da sua conta e para comunicação de suporte.
-    * **Senha:** Nós **NUNCA** armazenamos sua senha em texto plano. Salvamos apenas uma versão criptografada (hash) para garantir a segurança da sua conta.
-
-* **Dados de Ativação do Dispositivo:**
-    * **Auth Token do Blynk e ID do Totem:** Quando você ativa seu dispositivo físico, nós associamos o token de autenticação dele à sua conta para que nosso sistema possa enviar os comandos corretos para o seu totem específico.
+    * **Senha:** Armazenamos uma versão criptografada (hash) da sua senha para garantir a segurança da sua conta.
 
 * **Dados de Saúde (Com sua Permissão Explícita via Health Connect):**
-    * O aplicativo solicitará sua permissão para **ler**, de forma segura, os seguintes tipos de dados do Health Connect no seu dispositivo: **Energia Ativa Queimada** (Calorias Ativas).
+    * O aplicativo solicitará sua permissão para **ler**, de forma segura, os seguintes tipos de dados do Health Connect no seu dispositivo:
+        1.  **Energia Ativa Queimada (Calorias Ativas):** Usado para comparar com sua meta diária e acionar a recompensa.
+        2.  **Reconhecimento de Atividade Física:** Uma permissão geral do sistema Android necessária para que os aplicativos possam acessar dados de condicionamento físico.
 
+* **Dados de Ativação do Dispositivo:**
+    * **Auth Token do Blynk e ID do Totem:** Associados à sua conta para que nosso sistema possa se comunicar com o seu totem físico.
+      
 ### 4. Como Usamos Seus Dados
 * **Para o Funcionamento do Produto:** Seus dados de conta são usados para o login. Seu Auth Token do Blynk é usado para que nosso servidor possa se comunicar com seu totem físico.
 * **Para a Lógica de Gamificação:** Os dados de **Energia Ativa Queimada** são lidos do Health Connect e comparados com a sua meta diária. Esta comparação é feita para determinar se uma recompensa deve ser acionada. **Nós não armazenamos seu histórico detalhado de dados de saúde em nosso servidor.** A leitura é feita apenas para a verificação da meta. Apenas o evento de "meta batida" pode ser registrado para fins de histórico de recompensas.
