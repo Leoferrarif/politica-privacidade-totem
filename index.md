@@ -20,7 +20,7 @@ Para fornecer a funcionalidade do nosso serviço, coletamos os seguintes tipos d
 
 * **Dados de Saúde (Com sua Permissão Explícita via Health Connect):**
     * O aplicativo solicitará sua permissão para **ler**, de forma segura, os seguintes tipos de dados do Health Connect no seu dispositivo:
-        1.  **Total calories burned (Total de calorias queimadas):** Usado para comparar com sua meta diária e acionar a recompensa.
+        1.  **android.permission.health.READ_TOTAL_CALORIES_BURNED" -Total calories burned (Total de calorias queimadas):** Usado para comparar com sua meta diária e acionar a recompensa.
         3.  **Reconhecimento de Atividade Física:** Uma permissão geral do sistema Android necessária para que os aplicativos possam acessar dados de condicionamento físico.
 
 * **Dados de Ativação do Dispositivo:**
