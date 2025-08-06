@@ -27,9 +27,13 @@ Para fornecer a funcionalidade do nosso serviço, coletamos os seguintes tipos d
     * **Auth Token do Blynk e ID do Totem:** Associados à sua conta para que nosso sistema possa se comunicar com o seu totem físico.
       
 ### 4. Como Usamos Seus Dados
-* **Para o Funcionamento do Produto:** Seus dados de conta são usados para o login. Seu Auth Token do Blynk é usado para que nosso servidor possa se comunicar com seu totem físico.
-* **Para a Lógica de Gamificação:** Os dados de **Energia Ativa Queimada** são lidos do Health Connect e comparados com a sua meta diária. Esta comparação é feita para determinar se uma recompensa deve ser acionada. **Nós não armazenamos seu histórico detalhado de dados de saúde em nosso servidor.** A leitura é feita apenas para a verificação da meta. Apenas o evento de "meta batida" pode ser registrado para fins de histórico de recompensas.
-* **Para Comunicação:** Podemos usar seu e-mail para contatá-lo sobre informações importantes do serviço ou para fins de suporte técnico.
+Para o Funcionamento do Produto: Seus dados de conta são usados para o login. Seu Auth Token do Blynk é usado para que nosso servidor possa se comunicar com seu totem físico.
+
+Para a Lógica de Gamificação: Os dados de Total de Calorias Queimadas são lidos do Health Connect e comparados com a sua meta diária. Esta comparação é feita para determinar se uma recompensa deve ser acionada. Nós não armazenamos seu histórico detalhado de dados de saúde em nosso servidor. A leitura é feita apenas para a verificação da meta.
+
+Sincronização Automática em Segundo Plano: Para proporcionar uma experiência fluida e garantir que você receba sua recompensa assim que atingir sua meta, o aplicativo realiza a sincronização dos seus dados de calorias de forma periódica e automática, em segundo plano. Isso significa que a verificação da sua meta pode ocorrer mesmo quando o aplicativo não está aberto na sua tela. Esta funcionalidade existe unicamente para acionar sua recompensa sem que você precise abrir o aplicativo manualmente, reforçando o ciclo de hábito positivo.
+
+Para Comunicação: Podemos usar seu e-mail para contatá-lo sobre informações importantes do serviço ou para fins de suporte técnico.
 
 ### 5. Compartilhamento e Armazenamento de Dados
 Nós **não vendemos, alugamos ou compartilhamos** seus dados pessoais ou de saúde com empresas terceiras para fins de marketing ou publicidade. A comunicação de dados ocorre apenas entre seu aplicativo, nosso servidor seguro e os serviços necessários para o funcionamento do produto (Blynk e a API Health Connect do Google, que roda localmente no seu dispositivo).
